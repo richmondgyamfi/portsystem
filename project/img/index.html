@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div class="header">
+  <h2 id="hid">DG ENT.</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+  <a href="loginpage.php">Login/Register</a>
+</div>
+
+<div class="content">
+  <div class="container3">
+    <div class="col2"> left</div>
+     <div class="col8">
+      <div class="row">
+        <h2 style="text-align: center;">Products Available</h2>
+        <div class="item">
+          <h4>Necklace</h4>
+          <img src="img/beads/images2.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$120</s></p>
+          <p>Last Price: $100</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Necklace</h4>
+          <img src="img/beads/images1.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$180</s></p>
+          <p>Last Price: $110</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Earring</h4>
+          <img src="img/beads/earing.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$23</s></p>
+          <p>Last Price: $20</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Earring</h4>
+          <img src="img/beads/earring.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$30</s></p>
+          <p>Last Price: $22</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Earring</h4>
+          <img src="img/beads/earrings.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$25</s></p>
+          <p>Last Price: $18</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Necklace</h4>
+          <img src="img/beads/neck-red.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$90</s></p>
+          <p>Last Price: $70</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Necklace</h4>
+          <img src="img/beads/neckear.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$200</s></p>
+          <p>Last Price: $160</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+        <div class="item">
+          <h4>Necklace</h4>
+          <img src="img/beads/neck.jpg" alt="necklace" class="imgclass">
+          <p>Price: <s>$110</s></p>
+          <p>Last Price: $90</p>
+          <button type="button" class="btn" data-toggle="modal" data-target="#details-1">Details</button>
+        </div>
+      </div>
+    </div>
+    <div class="col2">right</div>
+  </div>
+
+  <footer id="footer">&copy; Copyright 2018-2019 Amine Studios</footer>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

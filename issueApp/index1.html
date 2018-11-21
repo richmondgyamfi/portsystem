@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>IssueApp</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/material.min.css">
+    
+  </head>
+  <body>
+
+    <div ng-app="" class="container">
+        <h1>Issues App</h1>
+        <div class="jumbotron">
+
+        <label>Description</label><br>
+
+        <input type="text" class="form-control" ng-model="dataIssue.description"></p>
+        <br><br>
+        <label>SERIOUS</label><br>
+            <select ng-model="dataIssue.serious" class="form-control">
+                <option selected>Select how severe</option>
+                <option>HIGH</option>
+                <option>MEDIUM</option>
+                <option>LOW</option>
+            </select>
+        <br><br>
+
+<label>NAME</label><br>
+    <input type="text" ng-model="dataIssue.assignedto" class="form-control"></p>
+    <br><br>
+    <button class="btn btn-primary" ng-click=send()>SEND</button>
+    <br>
+    <br><br>
+</div>
+
+<div style="background-color:brown;">
+<h2>list of issues</h2>
+
+<div>
+        <p>Assigned To:  {{issue.assignedto}}</p>
+        <p>Severity:  {{issue.serious}}</p>
+        <p>Description:  {{issue.description}}</p>
+      <button ng-click="delete(index)" class="btn btn-warning">delete</button>
+    </div> 
+</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.description = "";
+        $scope.serious = "";
+        $scope.assignedto = "";
+        $scope.dataIssue = {};
+        $scope.issueArray = [];
+
+        $scope.send = function(){
+          // $scope.dataIssue = {
+          //   description: $scope.description,
+          //   serious: $scope.serious,
+          //   assignedto: $scope.assignedto
+          // }
+          // console.log($scope.dataIssue);
+          $scope.issueArray.push($scope.dataIssue);
+          console.log($scope.issueArray);
+
+        $scope.description = "";
+        $scope.serious = "";
+        $scope.assignedto = "";
+        $scope.dataIssue = {};
+        }
+
+        $scope.delete = function(){
+
+        }
+    });
+</script>
+  </body>
+</html>

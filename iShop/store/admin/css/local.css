@@ -1,0 +1,151 @@
+.image{
+	height:350px;
+	width:320px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.imag{
+	height:200px;
+	width:320px;
+	margin-top: 10px;
+
+	margin-right: 5px;
+}
+.imglog{
+  width: 100px;
+  height: 100px;
+  /*margin-top: px;*/
+  margin-top: 1px;
+  float: left;
+	margin-right: 10px;
+}
+.circle{
+
+	width: 120px;
+	height: 40px;
+	background-color: #33322C;
+	margin-left: 150px;
+
+	border-radius: 70px;
+	text-align: center;
+	color: white;
+
+
+	float: right;
+}
+.blg{
+	border-radius: 50px;
+	padding: 1px 10px 1px 10px;
+	float: right;
+}
+.s_name{
+	float: right;
+	/* margin-left: 40px; */
+}
+.h_text{
+	/* color: white; */
+
+}
+.imageModal{
+	width: 600px;
+	height: 400px;
+
+}
+#main1{
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#main{
+	z-index: 10;
+}
+#up_form{
+	background-color: ghostwhite;
+	padding-top: 1px;
+	border-radius: 5px;
+}
+#log_form{
+	background-color: ghostwhite;
+	padding-top: 1px;
+
+}
+.col_black{
+	/*color: rgb(240, 173, 78);*/
+
+}
+#textformat{
+	color: white;
+}
+.t_tex{
+	color: white;
+
+}
+.f_mar{
+	padding-bottom: 4px;
+}
+.log_mar{
+	margin-top: 140px;
+}
+.sig_mar{
+	margin-top: 70px;
+}
+input.inpt{
+	width: 200px;
+}
+input.inpt1{
+	width: 70px;
+
+}
+.menuleft{
+	float: right;
+}
+.pad{
+	padding-top: 10px;
+}
+.c_btn_p{
+	color: white;
+	background-color:  #33322C;
+}
+.action{
+	float: right;
+	/*margin-left: 100;*/
+}
+.view{
+	margin-left: 50px;
+
+}
+.c_btn_b{
+	background-color: rgb(55, 58, 60);
+	color: white;
+}
+.s_name{
+	float: right;
+	font-size: 13px;
+	/* margin-left: 40px; */
+}
+.del_img{
+	height: 230px;
+	width: 270px;
+	float: left;
+	margin-right: 30px;
+}
+.del_mar{
+	padding: 10px;
+	background-color: white;
+	margin-left: 300px;
+	margin-top: 20px;
+}
+.mar_del{
+	margin-top: 70px;
+
+}
+.logo{
+	width: 200px;
+	height: 200px;
+}

@@ -1,0 +1,14 @@
+.topimage{
+	position: relative;
+	overflow: hidden;
+	height: 600px;
+	background-image: url(../img/revo-01.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#campusid{
+	text-align: center;
+	margin-top: 20%;
+	text-shadow: 3px 3px 4px white;
+	font-size: 120px;
+}
